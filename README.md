@@ -8,8 +8,8 @@ In this repository, you will find a collection of projects and assignments that 
 
 ## List of Projects
 
-- [0x00. Python - Variable Annotations](https://github.com/Ebube-Ochemba/alx-backend-python)
-- [](https://github.com/Ebube-Ochemba/)
+- [0x00. Python - Variable Annotations](https://github.com/Ebube-Ochemba/alx-backend-python/0x00-python_variable_annotations)
+- [](https://github.com/Ebube-Ochemba/alx-backend-python/)
 
 
 ## Environment
