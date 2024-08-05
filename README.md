@@ -1,4 +1,4 @@
-# alx-backend-javascript
+# Alx Back-end Python
 
 > This repository contains programs written for the Backend Python of the short specialization track at Alx.
 
