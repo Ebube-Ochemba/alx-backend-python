@@ -18,4 +18,4 @@ I learnt about `async` and `await` syntax, how to execute an async program with 
 - [ ] [3-tasks.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x01-python_async_function/3-tasks.py): A function `task_wait_random` that takes an integer `max_delay` and returns a `asyncio.Task`. (do not create an async function, use the regular function syntax to do this)
 - [ ] [4-tasks.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x01-python_async_function/4-tasks.py): Take the code from `wait_n` and alter it into a new function `task_wait_n`. The code is nearly identical to `wait_n` except `task_wait_random` is being called.
 
-> [test_files](): A folder of test files. Provided by Alx.
+> [test_files](./test_files): A folder of test files. Provided by Alx.
