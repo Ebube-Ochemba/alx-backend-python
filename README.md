@@ -9,6 +9,7 @@ In this repository, you will find a collection of projects and assignments that 
 ## List of Projects
 
 - [0x00. Python - Variable Annotations](https://github.com/Ebube-Ochemba/alx-backend-python/tree/main/0x00-python_variable_annotations)
+- [0x01. Python - Async](https://github.com/Ebube-Ochemba/alx-backend-python/tree/main/0x01-python_async_function)
 - [](https://github.com/Ebube-Ochemba/alx-backend-python/tree/main/)
 
 
