@@ -28,8 +28,8 @@ I learnt about Type annotations in Python 3: how you can use type annotations to
 def element_length(lst):
     return [(i, len(i)) for i in lst]
 ```
-- [ ] [100-safe_first_element.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x00-python_variable_annotations/100-safe_first_element.py): Augment the provided code with the correct duck-typed annotations
-- [ ] [101-safely_get_value.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x00-python_variable_annotations/101-safely_get_value.py): Add type annotations to the provided function
-- [ ] [102-type_checking.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x00-python_variable_annotations/102-type_checking.py): Use mypy to validate the provided piece of code and apply any necessary changes.
+- [x] [100-safe_first_element.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x00-python_variable_annotations/100-safe_first_element.py): Augment the provided code with the correct duck-typed annotations
+- [x] [101-safely_get_value.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x00-python_variable_annotations/101-safely_get_value.py): Add type annotations to the provided function
+- [x] [102-type_checking.py](https://github.com/Ebube-Ochemba/alx-backend-python/blob/main/0x00-python_variable_annotations/102-type_checking.py): Use mypy to validate the provided piece of code and apply any necessary changes.
 
 > [test_files](./test_files): A folder of test files. Provided by Alx.
