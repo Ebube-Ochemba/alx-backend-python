@@ -1,6 +1,6 @@
 # Python - Variable Annotations
 
-> This project was Variable Annotations.
+> This project was an introduction to Variable Annotations.
 
 ## Summary
 
