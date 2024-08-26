@@ -74,33 +74,34 @@ class TestGetJson(unittest.TestCase):
         self.assertEqual(result, test_payload)
 
 
-class TestClass:
-
-    def a_method(self):
-        return 42
-
-    @memoize
-    def a_property(self):
-        return self.a_method()
-
-
 class TestMemoize(unittest.TestCase):
     """Tests the memoize decorator"""
 
-    @patch.object(TestClass, "a_method")
-    def test_memoize(self, mock_a_method):
+    def test_memoize(self):
         """Test that memoize caches the result of a method"""
-        mock_a_method.return_value = 42  # Mock the return value of a_method
 
-        test_instance = TestClass()  # Create an instance of TestClass
+        class TestClass:
+            def a_method(self):
+                return 42
 
-        # Call a_property twice
-        result_first_call = test_instance.a_property
-        result_second_call = test_instance.a_property
+            @memoize
+            def a_property(self):
+                return self.a_method()
 
-        # Assert that the results of both calls are correct
-        self.assertEqual(result_first_call, 42)
-        self.assertEqual(result_second_call, 42)
+        # Patch the a_method to monitor its calls
+        with patch.object(TestClass,
+                          "a_method",
+                          return_value=42
+                          ) as mock_a_method:
+            test_instance = TestClass()
 
-        # Assert that a_method was called only once
-        mock_a_method.assert_called_once()
+            # Call a_property twice
+            result_first_call = test_instance.a_property
+            result_second_call = test_instance.a_property
+
+            # Assert that the results of both calls are correct
+            self.assertEqual(result_first_call, 42)
+            self.assertEqual(result_second_call, 42)
+
+            # Assert that a_method was called only once
+            mock_a_method.assert_called_once()
