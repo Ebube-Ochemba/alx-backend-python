@@ -56,7 +56,7 @@ class TestGetJson(unittest.TestCase):
     def test_get_json(self,
                       test_url: str,
                       test_payload: Dict,
-                       mock_get,
+                      mock_get,
                       ) -> None:
         """Test get_json with mock requests.get"""
 
