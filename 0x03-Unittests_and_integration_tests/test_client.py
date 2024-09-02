@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import unittest
-from unittest.mock import patch, PropertyMock
+from unittest.mock import MagicMock, patch, PropertyMock
 from parameterized import parameterized
 from client import GithubOrgClient
 
@@ -51,7 +51,7 @@ class TestGithubOrgClient(unittest.TestCase):
             )
 
     @patch("client.get_json")
-    def test_public_repos(self, mock_get_json):
+    def test_public_repos(self, mock_get_json: MagicMock) -> None:
         """Tests the public_repos method."""
 
         # Define a mock payload for the get_json function
